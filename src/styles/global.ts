@@ -20,7 +20,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body{
-        background: var(---backgound);
+        background: var(--backgound);
         -webkit-font-smoothing: antialiased;
     }
 

@@ -6,7 +6,7 @@ export function Header(){
         <Container>
             <Content>
                 <img src={logoImg} alt="psmoney" />
-                <button type='button'>Nova transação</button>
+                <button type='button'>New Transaction</button>
             </Content>
         </Container>
     )

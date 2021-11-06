@@ -8,16 +8,16 @@ export function Summary(){
         <Container>
             <div>
                 <header>
-                    <p>Entradas</p>
-                    <img src={incomeImg} alt="Entradas" />
+                    <p>Income</p>
+                    <img src={incomeImg} alt="Income" />
                 </header>
                 <strong>R$ 1000,00</strong>
             </div>
 
             <div>
                 <header>
-                    <p>Saídas</p>
-                    <img src={outcomeImg} alt="Saídas" />
+                    <p>Outcome</p>
+                    <img src={outcomeImg} alt="Outcome" />
                 </header>
                 <strong>- R$ 500,00</strong>
             </div>

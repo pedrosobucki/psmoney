@@ -13,9 +13,28 @@ export function NewTransactionModal({isOpen, onRequestClose}: NewTransactionModa
     return (
         <Modal
         isOpen={isOpen}
-        onRequestClose={onRequestClose}>
+        onRequestClose={onRequestClose}
+        overlayClassName="react-modal-overlay"
+        className="react-modal-content">
 
-        <h2>Create new transaction</h2>
+            <Container>
+                <h2>Create new transaction</h2>
+
+                <input
+                placeholder="Title"
+                type="text" />
+
+                <input
+                placeholder="Value"
+                type="number" />
+
+                <input
+                placeholder="Category"
+                type="text" />
+
+                <button type="submit">Create</button>
+            </Container>
+
       </Modal>
     )
 }

@@ -16,7 +16,7 @@ createServer({
           id: 1,
           title: 'Website development',
           type: 'deposit',
-          category: 'job',
+          category: 'Job',
           ammount: 1500,
           createdAt: new Date('2021-11-09 09:00:00')
         },
@@ -25,7 +25,7 @@ createServer({
           id: 2,
           title: 'Appartment Rent',
           type: 'withdraw',
-          category: 'home',
+          category: 'Home',
           ammount: 600,
           createdAt: new Date('2021-11-18 09:00:00')
         }

@@ -23,15 +23,24 @@ export function NewTransactionModal({isOpen, onRequestClose}: NewTransactionModa
     const [type, setType] = useState('deposit')
     
 
-    function handleCreateNewTransaction(event: FormEvent){
+    async function handleCreateNewTransaction(event: FormEvent){
         event.preventDefault();
 
-        createTransaction({
+        await createTransaction({ //waits insert in order to close modal
             title,
             ammount,
             category,
-            type
+            type,
+            createdAt: new Date()
         })
+
+        //reset modal values
+        setTile('')
+        setAmmount(0)
+        setCategory('')
+        setType('desposit')
+
+        onRequestClose() //close modal
     }
 
     Modal.setAppElement('#root')
